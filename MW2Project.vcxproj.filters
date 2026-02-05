@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Imgui">
+      <UniqueIdentifier>{7730d9dd-537e-4210-b20e-5f14da3ecd1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Minhook">
+      <UniqueIdentifier>{0392ec28-5440-4ac6-9ceb-35c9a34c9fdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App">
+      <UniqueIdentifier>{9505adfd-ab19-43d3-a18a-2f18dbc7b60d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks">
+      <UniqueIdentifier>{a95730df-e420-417f-96da-05c60c6ab788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{dc6cc0d2-2ba7-4e3e-abcc-6a01ae594214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{e7cf6cee-3b8a-44a8-99ae-1ec20c94c3e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\input">
+      <UniqueIdentifier>{c15ae700-0e70-425d-83c3-651024ecc317}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features">
+      <UniqueIdentifier>{98755c3e-1186-471a-a8c0-6947c1bbaee8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\Gamepad">
+      <UniqueIdentifier>{f2780de3-c16a-45d6-bf53-8d14e7ddf082}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="minhook\MinHook.h">
+      <Filter>Minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="includes.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="Start.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Hook.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="LazyImporter.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_dx12.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_win32.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\ImGui_ShaderBlobs.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="mem.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameFunction.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="spoof.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="game_struct.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="entities.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="bocw.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="cfg.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="CLActiveClient.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="visuals.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="custom_imgui.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="aimbot.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="input_controls.h">
+      <Filter>utility\input</Filter>
+    </ClInclude>
+    <ClInclude Include="custom_shared.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamepad.h">
+      <Filter>utility\Gamepad</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamepad_private.h">
+      <Filter>utility\Gamepad</Filter>
+    </ClInclude>
+    <ClInclude Include="unlockAll.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="d3d.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="Hook.cpp">
+      <Filter>Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="utility.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_dx12.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_win32.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\ImGui_ShaderBlobs.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="GameFunction.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="entities.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="CLActiveClient.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Start.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="visuals.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_imgui.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="cfg.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="aimbot.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="input_controls.cpp">
+      <Filter>utility\input</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_shared.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Gamepad_private.c">
+      <Filter>utility\Gamepad</Filter>
+    </ClCompile>
+    <ClCompile Include="Gamepad_windows_dinput.c">
+      <Filter>utility\Gamepad</Filter>
+    </ClCompile>
+    <ClCompile Include="unlockAll.cpp">
+      <Filter>Features</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="spoofcall.asm">
+      <Filter>utility</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
