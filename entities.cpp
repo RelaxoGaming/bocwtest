@@ -4,6 +4,8 @@
 
 CgGlobalsMP* CG_GetLocalClientGlobals()
 {
+	// Alternative memory access via pointer math (reference for DMA migration):
+	// return address_t(*ctx::mem.playerstate_P.ps_ptr.cast<uintptr_t*>() - ctx::mem.CgGlobalsMP.predictedPlayerState.cast()).cast<CgGlobalsMP*>();
 	return nullptr;
 }
 
