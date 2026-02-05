@@ -24,43 +24,12 @@ namespace ctx
 
 		}
 
-		namespace itemesp
-		{
-		
-		}
-
-		namespace aimbot
-		{
-			bool enabled = true;
-			bool silent = true;
-			bool Aim_at_ai = false;
-			bool visible_only = true;
-			bool skip_knocked = true;
-			bool self_reviving = true;
-			uint32_t aim_key;
-			uint32_t bone_priority;
-			uint32_t target_mode;
-			float fov = 200.f;
-			float max_distance = 200.f;
-			float smoothness =0.f;
-
-
-		}
-
 		namespace misc
 		{
 			float f_recoilslider{1.0f};
 			bool noflash;
 			bool nostun;
 			bool rapidfire;
-
-		}
-
-		namespace gamepad
-		{
-			 int xbox_id;
-			 int ps_id;
-
 		}
 
 		namespace colors

@@ -154,7 +154,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="aimbot.h" />
     <ClInclude Include="cfg.h" />
     <ClInclude Include="CLActiveClient.h" />
     <ClInclude Include="Client.h" />
@@ -163,8 +162,6 @@
     <ClInclude Include="d3d.h" />
     <ClInclude Include="entities.h" />
     <ClInclude Include="GameFunction.h" />
-    <ClInclude Include="Gamepad.h" />
-    <ClInclude Include="Gamepad_private.h" />
     <ClInclude Include="game_struct.h" />
     <ClInclude Include="Hook.h" />
     <ClInclude Include="imgui\imconfig.h" />
@@ -177,7 +174,6 @@
     <ClInclude Include="imgui\imstb_textedit.h" />
     <ClInclude Include="imgui\imstb_truetype.h" />
     <ClInclude Include="includes.h" />
-    <ClInclude Include="input_controls.h" />
     <ClInclude Include="LazyImporter.h" />
     <ClInclude Include="mem.h" />
     <ClInclude Include="Menu.h" />
@@ -186,12 +182,10 @@
     <ClInclude Include="sdk.h" />
     <ClInclude Include="spoof.h" />
     <ClInclude Include="Start.h" />
-    <ClInclude Include="unlockAll.h" />
     <ClInclude Include="utility.h" />
     <ClInclude Include="visuals.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="aimbot.cpp" />
     <ClCompile Include="cfg.cpp" />
     <ClCompile Include="CLActiveClient.cpp" />
     <ClCompile Include="custom_imgui.cpp" />
@@ -200,8 +194,6 @@
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="entities.cpp" />
     <ClCompile Include="GameFunction.cpp" />
-    <ClCompile Include="Gamepad_private.c" />
-    <ClCompile Include="Gamepad_windows_dinput.c" />
     <ClCompile Include="Hook.cpp" />
     <ClCompile Include="imgui\imgui.cpp" />
     <ClCompile Include="imgui\imgui_demo.cpp" />
@@ -210,11 +202,9 @@
     <ClCompile Include="imgui\imgui_impl_win32.cpp" />
     <ClCompile Include="imgui\ImGui_ShaderBlobs.cpp" />
     <ClCompile Include="imgui\imgui_widgets.cpp" />
-    <ClCompile Include="input_controls.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="sdk.cpp" />
     <ClCompile Include="Start.cpp" />
-    <ClCompile Include="unlockAll.cpp" />
     <ClCompile Include="utility.cpp" />
     <ClCompile Include="visuals.cpp" />
   </ItemGroup>

@@ -325,12 +325,9 @@ void __stdcall hk_wow64_prepare_for_exception(PEXCEPTION_RECORD exception_record
 		::D3D12::DrawCB([]() -> void {
 
 			visuals::draw();
-			aimbot::Aim_Loop();
 			g_menu::Menu();
 
-
-		}
-		);
+		});
 	
 
 

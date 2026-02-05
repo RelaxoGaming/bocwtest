@@ -109,39 +109,7 @@ namespace StartPoint
 		
 
 
-		/////// Get Bone ids;
-		 
-		//ctx::offset::scr_string_start =  mem::Scanner::Scanner("8b 15 ? ? ? ? 44 8b 05 ? ? ? ? 44 8b 0d ? ? ? ? 8b 05 ? ? ? ? eb ? 8b 15", "sl_string_start").resolve_mov32(); //mov edx,[BlackOpsColdWar.exe+E607540]
-		//if (ctx::offset::scr_string_start)
-		//{
-		//	ctx::offset::j_head			= mem::Scanner::Scanner(ctx::offset::scr_string_start.cast() + 0x64).getaddr();
-		//	ctx::offset::j_neck			= mem::Scanner::Scanner(ctx::offset::scr_string_start.cast() + 0x574).getaddr();
-		//	ctx::offset::j_spine4		= mem::Scanner::Scanner(ctx::offset::scr_string_start.cast() + 0x58).getaddr();
-		//	ctx::offset::j_spineupper	= mem::Scanner::Scanner(ctx::offset::scr_string_start.cast() + 0x594).getaddr();
-		//	ctx::offset::j_spinelower	= mem::Scanner::Scanner(ctx::offset::scr_string_start.cast() + 0x590).getaddr();
-		//	ctx::offset::j_mainroot		= mem::Scanner::Scanner(ctx::offset::scr_string_start.cast() + 0x570).getaddr();
-		//	ctx::offset::j_hip_ri		= mem::Scanner::Scanner(ctx::offset::scr_string_start.cast() + 0x558).getaddr();
-		//	ctx::offset::j_knee_ri		= mem::Scanner::Scanner(ctx::offset::scr_string_start.cast() + 0x560).getaddr();
-		//	ctx::offset::j_ankle_ri		= mem::Scanner::Scanner(ctx::offset::scr_string_start.cast() + 0x514).getaddr();
-		//	ctx::offset::j_ball_ri		= mem::Scanner::Scanner(ctx::offset::scr_string_start.cast() + 0x51C).getaddr();
-		//	ctx::offset::j_hip_le		= mem::Scanner::Scanner(ctx::offset::scr_string_start.cast() + 0x554).getaddr();
-		//	ctx::offset::j_knee_le		= mem::Scanner::Scanner(ctx::offset::scr_string_start.cast() + 0x55C).getaddr();
-		//	ctx::offset::j_ankle_le		= mem::Scanner::Scanner(ctx::offset::scr_string_start.cast() + 0x510).getaddr();
-		//	ctx::offset::j_ball_le		= mem::Scanner::Scanner(ctx::offset::scr_string_start.cast() + 0x518).getaddr();
-		//	ctx::offset::j_clavicle_le  = mem::Scanner::Scanner(ctx::offset::scr_string_start.cast() + 0x520).getaddr();
-		//	ctx::offset::j_shoulder_le  = mem::Scanner::Scanner(ctx::offset::scr_string_start.cast() + 0x56C).getaddr();
-		//	ctx::offset::j_elbow_le		= mem::Scanner::Scanner(ctx::offset::scr_string_start.cast() + 0x534).getaddr();
-		//	ctx::offset::j_clavicle_ri  = mem::Scanner::Scanner(ctx::offset::scr_string_start.cast() + 0x524).getaddr();
-		//	ctx::offset::j_shoulder_ri  = mem::Scanner::Scanner(ctx::offset::scr_string_start.cast() + 0x588).getaddr();
-		//	ctx::offset::j_elbow_ri		= mem::Scanner::Scanner(ctx::offset::scr_string_start.cast() + 0x538).getaddr();
-		//	ctx::offset::j_wrist_ri		= mem::Scanner::Scanner(ctx::offset::scr_string_start.cast() + 0x584).getaddr();
-		//	ctx::offset::j_wrist_le		= mem::Scanner::Scanner(ctx::offset::scr_string_start.cast() + 0x568).getaddr();
-
-
-
-		//	
-		//}
-
+		// Get Bone IDs
 		j_head			= GameFunction::ScrStr_FindString("j_head");
 		j_neck			= GameFunction::ScrStr_FindString("j_neck");
 		j_spine4		= GameFunction::ScrStr_FindString("j_spine4");
@@ -164,70 +132,6 @@ namespace StartPoint
 		j_elbow_ri		= GameFunction::ScrStr_FindString("j_elbow_ri");
 		j_wrist_ri		= GameFunction::ScrStr_FindString("j_wrist_ri");
 		j_wrist_le		= GameFunction::ScrStr_FindString("j_wrist_le");
-	
-		//log::NotePad("id: %d\n", *ctx::offset::j_head.cast<int*>());
-		//log::NotePad("id: %d\n", *ctx::offset::j_neck.cast<int*>());
-		//log::NotePad("id: %d\n", *ctx::offset::j_spine4.cast<int*>());
-		//log::NotePad("id: %d\n", *ctx::offset::j_spineupper.cast<int*>());
-		//log::NotePad("id: %d\n", *ctx::offset::j_spinelower.cast<int*>());
-		//log::NotePad("id: %d\n", *ctx::offset::j_mainroot.cast<int*>());
-		//log::NotePad("id: %d\n", *ctx::offset::j_hip_le.cast<int*>());
-		//log::NotePad("id: %d\n", *ctx::offset::j_hip_ri.cast<int*>());
-		//log::NotePad("id: %d\n", *ctx::offset::j_knee_le.cast<int*>());
-		//log::NotePad("id: %d\n", *ctx::offset::j_knee_ri.cast<int*>());
-		//log::NotePad("id: %d\n", *ctx::offset::j_ball_le.cast<int*>()); 
-		//log::NotePad("id: %d\n", *ctx::offset::j_ball_ri.cast<int*>());
-		//log::NotePad("id: %d\n", *ctx::offset::j_ankle_le.cast<int*>());
-		//log::NotePad("id: %d\n", *ctx::offset::j_ankle_ri.cast<int*>());
-		//log::NotePad("id: %d\n", *ctx::offset::j_clavicle_le.cast<int*>());
-		//log::NotePad("id: %d\n", *ctx::offset::j_clavicle_ri.cast<int*>());
-		//log::NotePad("id: %d\n", *ctx::offset::j_shoulder_le.cast<int*>());
-		//log::NotePad("id: %d\n", *ctx::offset::j_shoulder_ri.cast<int*>());
-		//log::NotePad("id: %d\n", *ctx::offset::j_elbow_ri.cast<int*>());
-		//log::NotePad("id: %d\n", *ctx::offset::j_elbow_le.cast<int*>());
-		//log::NotePad("id: %d\n", *ctx::offset::j_wrist_le.cast<int*>());
-		//log::NotePad("id: %d\n", *ctx::offset::j_wrist_ri.cast<int*>());
-
-
-		//auto asset = GameFunction::StringTable_GetAsset2(0x60548737CB57046Bi64); //.rodata:0000000002717796	0000002A	C	gamedata/weapons/common/weaponoptions.csv
-		//if (asset)
-		//{
-		//	auto num = *(int*)(asset + 0xC);
-		//	log::NotePad("row size: %d\n", num);
-
-		//	for (size_t i = 0; i < num; i++)
-		//	{
-		//		char* string;
-		//		if(GameFunction::StringTable_GetColumnValueForRow(asset, &string, i,1))
-		//		log::NotePad("%s\n", string);
-
-		//	}
-		//}
-		
-		/*auto time = GameFunction::Sys_GetUTC();
-		for (size_t i = 0; i < 2500; i++)
-		{
-			 
-			GameFunction::UpdatePlayerInventory(0, i, 0 , --time, 1, 1);
-		}
-		*/
-	/*	
-		for (size_t i = 0; i < 60; i++)
-		{
-
-			if (!ctx::offset::pmovehandler)
-				break;
-
-			if (ctx::offset::pmovehandler.cast<void**>()[i] == nullptr)
-				continue;
-
-			log::NotePad("id: %d ---- address: %x\n", i, ((uintptr_t)ctx::offset::pmovehandler.cast<void**>()[i] - (uintptr_t)GetModuleHandleA(0)));
-		}*/
-
-		/*MH_CreateHook(ctx::offset::Loot_GetitemQuantity.cast<void**>(), &GetItemQuantity_hook, 0);
-		MH_EnableHook(ctx::offset::Loot_GetitemQuantity.cast<void**>());*/
-
-		aimbot::initGamepad();
 
 		if (D3D12::Initd3d12() == D3D12::Status::Success)
 			D3D12::InstallHooks();

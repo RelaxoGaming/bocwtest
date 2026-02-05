@@ -2,9 +2,9 @@
 
 
 
-CgGlobalsMP* CG_GetLocalClientGlobals() // localplayer
+CgGlobalsMP* CG_GetLocalClientGlobals()
 {
-		//return address_t(*ctx::mem.playerstate_P.ps_ptr.cast<uintptr_t*>() - ctx::mem.CgGlobalsMP.predictedPlayerState.cast()).cast<CgGlobalsMP*>();
+	return nullptr;
 }
 
 entity_t* CG_GetEntity(int index)
@@ -14,14 +14,6 @@ entity_t* CG_GetEntity(int index)
 		return nullptr;
 
 	return reinterpret_cast<entity_t*>(cent_start + ctx::offset::Cent_size * index);
-
-	//auto pointer = GameFunction::test1(0);
-	//if (!pointer)
-	//	return nullptr;
-
-	//auto cent_start = pointer - (0x48C * ctx::offset::Cent_size);
-
-	//return reinterpret_cast<entity_t*>(cent_start + (ctx::offset::Cent_size * index));
 }
 
 
@@ -42,12 +34,6 @@ bool entity_t::get_bbox(math::vec4_t& box)
 
 	return true;
 }
-//
-//CharacterInfo_t* entity_t::Get_ClientInfo()
-//{
-//	return GameFunction::CG_GetClientInfo(game_struct::LOCAL_CLIENT_0, this->Number());
-//}
-
 
 bool entity_t::is_alive()
 {
@@ -72,11 +58,5 @@ game_struct::clientinfo_t* entity_t::Get_ClientInfo()
 
 std::string_view entity_t::GetWeaponName()
 {
-	//auto weapon = GameFunction::CG::CG_GetEntWeapon(this);
-	//if (!weapon)
-	//	return NULL;
-
-	//return GameFunction::UI::UI_SafeTranslateString(GameFunction::CG::CG_GetWeaponDisplayName(weapon).data());
-
 	return std::string_view();
 }

@@ -25,43 +25,12 @@ namespace ctx
 			extern float fov;
 		}
 
-		namespace itemesp
-		{
-			
-		}
-
-		namespace aimbot
-		{
-			extern bool enabled;
-			extern bool Aim_at_ai;
-
-			extern bool visible_only;
-			extern bool silent;
-			extern bool skip_knocked;
-			extern bool self_reviving;
-
-			extern uint32_t bone_priority;
-			extern uint32_t aim_key;
-			extern uint32_t target_mode;
-			extern float  max_distance;
-			extern float fov;
-			extern float smoothness;
-
-		}
-
 		namespace misc
 		{
 			extern bool noflash;
 			extern bool nostun;
 			extern bool rapidfire;
-			extern float f_recoilslider ;
-		}
-
-		namespace gamepad
-		{
-			extern int xbox_id;
-			extern int ps_id;
-
+			extern float f_recoilslider;
 		}
 
 		namespace colors

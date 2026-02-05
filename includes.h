@@ -38,11 +38,7 @@ using namespace shared;
 #include"cfg.h"
 #include "visuals.h"
 #include "custom_imgui.h"
-#include "aimbot.h"
-#include "input_controls.h"
 #include "custom_shared.h"
-#include "Gamepad.h"
-#include"unlockAll.h"
 
 
 #define max(a,b)            (((a) > (b)) ? (a) : (b))

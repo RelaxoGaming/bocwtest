@@ -31,14 +31,8 @@
     <Filter Include="Game">
       <UniqueIdentifier>{e7cf6cee-3b8a-44a8-99ae-1ec20c94c3e7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="utility\input">
-      <UniqueIdentifier>{c15ae700-0e70-425d-83c3-651024ecc317}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Features">
       <UniqueIdentifier>{98755c3e-1186-471a-a8c0-6947c1bbaee8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="utility\Gamepad">
-      <UniqueIdentifier>{f2780de3-c16a-45d6-bf53-8d14e7ddf082}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -129,23 +123,8 @@
     <ClInclude Include="custom_imgui.h">
       <Filter>App</Filter>
     </ClInclude>
-    <ClInclude Include="aimbot.h">
-      <Filter>Features</Filter>
-    </ClInclude>
-    <ClInclude Include="input_controls.h">
-      <Filter>utility\input</Filter>
-    </ClInclude>
     <ClInclude Include="custom_shared.h">
       <Filter>utility</Filter>
-    </ClInclude>
-    <ClInclude Include="Gamepad.h">
-      <Filter>utility\Gamepad</Filter>
-    </ClInclude>
-    <ClInclude Include="Gamepad_private.h">
-      <Filter>utility\Gamepad</Filter>
-    </ClInclude>
-    <ClInclude Include="unlockAll.h">
-      <Filter>Features</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -209,23 +188,8 @@
     <ClCompile Include="cfg.cpp">
       <Filter>Game</Filter>
     </ClCompile>
-    <ClCompile Include="aimbot.cpp">
-      <Filter>Features</Filter>
-    </ClCompile>
-    <ClCompile Include="input_controls.cpp">
-      <Filter>utility\input</Filter>
-    </ClCompile>
     <ClCompile Include="custom_shared.cpp">
       <Filter>utility</Filter>
-    </ClCompile>
-    <ClCompile Include="Gamepad_private.c">
-      <Filter>utility\Gamepad</Filter>
-    </ClCompile>
-    <ClCompile Include="Gamepad_windows_dinput.c">
-      <Filter>utility\Gamepad</Filter>
-    </ClCompile>
-    <ClCompile Include="unlockAll.cpp">
-      <Filter>Features</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
