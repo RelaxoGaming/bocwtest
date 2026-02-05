@@ -1,4 +1,8 @@
 #pragma once
+
+// Build configuration (must be first!)
+#include "build_config.h"
+
 #include"../shared/shared.hpp"
 
 using namespace shared;
@@ -8,6 +12,9 @@ using namespace shared;
 #include<atlcomcli.h>
 #include<vector>
 #include<winnt.h>
+#include<memory>
+#include<string>
+#include<array>
 #include"Imgui/imgui.h"
 #include"Imgui/imgui_internal.h"
 #include"Imgui/imgui_impl_win32.h"
@@ -18,6 +25,9 @@ using namespace shared;
 #include <dxgi1_4.h>
 #include<mutex>
 
+// Memory abstraction layer (DMA-ready)
+#include "memory/IMemoryReader.h"
+#include "memory/MemoryCache.h"
 
 #include"game_struct.h"
 #include"d3d.h"

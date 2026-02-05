@@ -34,6 +34,9 @@
     <Filter Include="Features">
       <UniqueIdentifier>{98755c3e-1186-471a-a8c0-6947c1bbaee8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{b1234567-89ab-cdef-0123-456789abcdef}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="minhook\MinHook.h">
@@ -126,6 +129,24 @@
     <ClInclude Include="custom_shared.h">
       <Filter>utility</Filter>
     </ClInclude>
+    <ClInclude Include="build_config.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="app_main.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\IMemoryReader.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\LocalMemoryReader.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\MemProcFSReader.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\MemoryCache.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -190,6 +211,18 @@
     </ClCompile>
     <ClCompile Include="custom_shared.cpp">
       <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="app_main.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\LocalMemoryReader.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\MemProcFSReader.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\MemoryCache.cpp">
+      <Filter>Memory</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -154,6 +154,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="build_config.h" />
+    <ClInclude Include="app_main.h" />
+    <ClInclude Include="memory\IMemoryReader.h" />
+    <ClInclude Include="memory\LocalMemoryReader.h" />
+    <ClInclude Include="memory\MemProcFSReader.h" />
+    <ClInclude Include="memory\MemoryCache.h" />
     <ClInclude Include="cfg.h" />
     <ClInclude Include="CLActiveClient.h" />
     <ClInclude Include="Client.h" />
@@ -186,6 +192,10 @@
     <ClInclude Include="visuals.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="app_main.cpp" />
+    <ClCompile Include="memory\LocalMemoryReader.cpp" />
+    <ClCompile Include="memory\MemProcFSReader.cpp" />
+    <ClCompile Include="memory\MemoryCache.cpp" />
     <ClCompile Include="cfg.cpp" />
     <ClCompile Include="CLActiveClient.cpp" />
     <ClCompile Include="custom_imgui.cpp" />
